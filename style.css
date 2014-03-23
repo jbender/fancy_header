@@ -1,0 +1,109 @@
+body{
+  position: relative;
+}
+
+h1 {
+  font-size: 24px;
+  display: inline-block;
+}
+
+.nav-toggle {
+  border: none;
+  border-radius: 3px;
+  font-size: 24px;
+  float: right;
+  line-height: 24px;
+}
+
+.nav-toggle:hover {
+  cursor: pointer;
+  color: #666;
+}
+
+header {
+  background: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  transition: background-color .5s;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.header-container {
+  height: 40px;
+  padding: 20px;
+}
+
+header.scrolled {
+  background-color: transparent;
+  transition: background-color .5s;
+}
+
+header.scrolled h1 {
+  display: none;
+}
+
+header.scrolled button {
+  background-color: #999;
+}
+
+header .nav-toggle {
+  background-color: transparent;
+  color: #eee;
+}
+
+.header-container,
+.menu-top {
+  width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: white;
+  text-align: center;
+  display: none;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  padding-top: 20px;
+}
+
+nav .nav-toggle {
+  background-color: transparent;
+}
+
+nav a {
+  display: block;
+  padding: 30px 0;
+  border-bottom: #ddd;
+  text-decoration: none;
+}
+
+nav i {
+  font-size: 24px;
+}
+
+.menu-top {
+  overflow: auto;
+}
+
+.menu-top > * {
+  line-height: 40px;
+}
+
+.menu-items {
+  border-top: 1px solid #eee;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.menu-items a:hover {
+  background-color: #ddd;
+}
+
+main {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
