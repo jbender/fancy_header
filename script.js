@@ -12,9 +12,9 @@ $(document).ready(function(){
   });
   $('.nav-toggle').click(function(e){
     if ($nav.is(':visible')) {
-      $('nav').slideUp(100);
+      $nav.slideUp(100);
     } else {
-      $('nav').slideDown(150);
+      $nav.slideDown(150);
     }
   });
 })
